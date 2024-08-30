@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delta</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th class="th">Показатель</th>
+          <th class="th th-blue">Текущий день</th>
+          <th class="th">Вчерашний день</th>
+          <th class="th">Текущий день недели</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-row="0">
+          <td>Выручка, руб</td>
+          <td class="td-blue" contenteditable="true">500521</td>
+          <td contenteditable="true">480521</td>
+          <td contenteditable="true">480512</td>
+        </tr>
+        <tr class="accordion" data-row="0">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-0"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="1">
+          <td>Наличные</td>
+          <td class="td-blue" contenteditable="true">300000</td>
+          <td contenteditable="true">300000</td>
+          <td contenteditable="true">300000</td>
+        </tr>
+        <tr class="accordion" data-row="1">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-1"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="2">
+          <td>Безналичный рассчет</td>
+          <td class="td-blue" contenteditable="true">1000000</td>
+          <td contenteditable="true">1000000</td>
+          <td contenteditable="true">1000000</td>
+        </tr>
+        <tr class="accordion" data-row="2">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-2"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="3">
+          <td>Кредитные карты</td>
+          <td class="td-blue" contenteditable="true">1000521</td>
+          <td contenteditable="true">1000521</td>
+          <td contenteditable="true">1000521</td>
+        </tr>
+        <tr class="accordion" data-row="3">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-3"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="4">
+          <td>Средний чек, руб</td>
+          <td class="td-blue" contenteditable="true">1300</td>
+          <td contenteditable="true">900</td>
+          <td contenteditable="true">900</td>
+        </tr>
+        <tr class="accordion" data-row="4">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-4"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="5">
+          <td>Средний гость, руб</td>
+          <td class="td-blue" contenteditable="true">1200</td>
+          <td contenteditable="true">800</td>
+          <td contenteditable="true">800</td>
+        </tr>
+        <tr class="accordion" data-row="5">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-5"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="6">
+          <td>Удалени из чека (после оплаты), руб</td>
+          <td class="td-blue" contenteditable="true">1000</td>
+          <td contenteditable="true">1200</td>
+          <td contenteditable="true">900</td>
+        </tr>
+        <tr class="accordion" data-row="6">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-6"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="7">
+          <td>Удалени из чека (до оплаты), руб</td>
+          <td class="td-blue" contenteditable="true">1300</td>
+          <td contenteditable="true">1300</td>
+          <td contenteditable="true">900</td>
+        </tr>
+        <tr class="accordion" data-row="7">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-7"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="8">
+          <td>Количество чеков</td>
+          <td class="td-blue" contenteditable="true">34</td>
+          <td contenteditable="true">36</td>
+          <td contenteditable="true">34</td>
+        </tr>
+        <tr class="accordion" data-row="8">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-8"></canvas>
+            </div>
+          </td>
+        </tr>
+        <tr data-row="9">
+          <td>Количество гостей</td>
+          <td class="td-blue" contenteditable="true">34</td>
+          <td contenteditable="true">36</td>
+          <td contenteditable="true">32</td>
+        </tr>
+        <tr class="accordion" data-row="9">
+          <td colspan="4">
+            <div class="chart-container">
+              <canvas id="chart-9"></canvas>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

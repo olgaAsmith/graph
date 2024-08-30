@@ -1,0 +1,112 @@
+body {
+  overflow-y: scroll;
+}
+table {
+  width: 60%;
+  margin: 20px 60px;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 4px 4px;
+  text-align: left;
+}
+
+thead tr th {
+  text-align: center;
+}
+
+tbody tr td {
+  text-align: right;
+}
+
+tbody tr td {
+  text-align: right;
+}
+
+tbody tr td:first-child {
+  text-align: left;
+}
+
+tbody tr td:nth-child(3) {
+  padding-right: 90px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+tr:hover {
+  cursor: pointer;
+}
+
+.accordion {
+  display: none;
+}
+
+.accordion-block {
+  display: table-row;
+}
+
+.accordion td {
+  padding: 0;
+}
+
+.accordion-block td {
+  border: none;
+  background-color: transparent;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+}
+
+.th-blue, .td-blue {
+  background-color: #eaf9fc;
+  text-align: right;
+}
+
+.th-red, .td-red {
+  background-color: #fce7e6;
+
+}
+
+.th-green, .td-green {
+  background-color: #ecf7e7;
+}
+
+.td-green, .td-green-week {
+  background-color: #d4edda;
+  position: relative;
+}
+
+.td-green::before {
+  content: attr(data-percentage);
+  color: green;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.td-red, .td-red-week {
+  background-color: #f8d7da;
+  position: relative;
+}
+
+.td-red::before {
+  content: attr(data-percentage);
+  color: red;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: inherit;
+  font-weight: 600;
+}
